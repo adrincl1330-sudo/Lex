@@ -1,0 +1,491 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexora — Digital Legal Dictionary</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Lexora<span>.</span></a>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#categories">Categories</a>
+                <a href="#dictionary">Dictionary</a>
+                <a href="#about">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <main>
+        <section class="hero" id="home">
+            <p class="eyebrow">DIGITAL LEGAL DICTIONARY</p>
+
+            <h1>
+                Understand the Language
+                <span>of Law.</span>
+            </h1>
+
+            <p class="hero-description">
+                Explore legal terms, understand their meanings,
+                and discover the world of law in a simpler way.
+            </p>
+
+            
+<div class="search-box">
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search legal terms..."
+        aria-label="Search legal terms"
+    >
+    <button type="button" id="searchButton">Search</button>
+</div>
+
+<div id="searchSuggestions" class="search-suggestions"></div>
+        </section>
+
+        
+
+<!-- CATEGORIES -->
+<section class="section" id="categories">
+
+    <div class="section-heading">
+        <p class="eyebrow">BROWSE BY SUBJECT</p>
+        <h2>Explore <span>Categories</span></h2>
+        <p>Discover legal terms by subject.</p>
+    </div>
+
+    <div class="categories-grid">
+
+        <a href="kategori-perdata.html" class="category-card">
+            <div class="category-icon">⚖️</div>
+            <h3>Hukum Perdata</h3>
+            <p>Perjanjian, warisan, dan hubungan antarindividu.</p>
+        </a>
+
+        <a href="kategori-pidana.html" class="category-card">
+            <div class="category-icon">🏛️</div>
+            <h3>Hukum Pidana</h3>
+            <p>Tindak pidana, pertanggungjawaban, dan pemidanaan.</p>
+        </a>
+
+        <a href="kategori-htn.html" class="category-card">
+            <div class="category-icon">📜</div>
+            <h3>Hukum Tata Negara</h3>
+            <p>Konstitusi, kedaulatan, dan lembaga negara.</p>
+        </a>
+
+        <a href="kategori-acara.html" class="category-card">
+            <div class="category-icon">⚖️</div>
+            <h3>Hukum Acara</h3>
+            <p>Proses dan tahapan penyelesaian perkara.</p>
+        </a>
+
+        <a href="kategori-umum.html" class="category-card">
+            <div class="category-icon">📚</div>
+            <h3>Istilah Hukum Umum</h3>
+            <p>Asas hukum, doktrin, dan yurisprudensi.</p>
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- DICTIONARY -->
+<section class="section" id="dictionary">
+
+    <div class="section-heading">
+        <p class="eyebrow">BUILD YOUR LEGAL KNOWLEDGE</p>
+        <h2>Popular <span>Terms</span></h2>
+        <p>Explore common legal terms and understand their meanings.</p>
+    </div>
+
+
+<div class="filter-buttons">
+    <button type="button" class="filter-btn active" data-filter="all">
+        Semua
+    </button>
+
+    <button type="button" class="filter-btn" data-filter="perdata">
+        Hukum Perdata
+    </button>
+
+    <button type="button" class="filter-btn" data-filter="pidana">
+        Hukum Pidana
+    </button>
+
+    <button type="button" class="filter-btn" data-filter="tata-negara">
+        Hukum Tata Negara
+    </button>
+
+    <button type="button" class="filter-btn" data-filter="acara">
+        Hukum Acara
+    </button>
+
+    <button type="button" class="filter-btn" data-filter="umum">
+        Hukum Umum
+    </button>
+</div>
+
+
+    <div class="dictionary-grid">
+
+        <article class="dictionary-card" data-category="perdata">
+            <span class="term-category">HUKUM PERDATA</span>
+            <h3>Wanprestasi</h3>
+            <p>Tidak dipenuhinya kewajiban sebagaimana mestinya dalam suatu perjanjian.</p>
+            <a href="wanprestasi.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="perdata">
+            <span class="term-category">HUKUM PERDATA</span>
+            <h3>Perbuatan Melawan Hukum</h3>
+            <p>Perbuatan yang memenuhi unsur-unsur perbuatan melawan hukum dan menimbulkan kerugian bagi pihak lain.</p>
+            <a href="pmh.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="tata-negara">
+            <span class="term-category">HUKUM TATA NEGARA</span>
+            <h3>Konstitusi</h3>
+            <p>Hukum dasar yang menjadi landasan penyelenggaraan negara.</p>
+            <a href="konstitusi.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="umum">
+            <span class="term-category">HUKUM UMUM</span>
+            <h3>Yurisprudensi</h3>
+            <p>Putusan hakim terdahulu yang dijadikan rujukan dalam perkara dengan persoalan hukum serupa.</p>
+            <a href="yurisprudensi.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="pidana">
+            <span class="term-category">HUKUM PIDANA</span>
+            <h3>Delik</h3>
+            <p>Istilah lain untuk tindak pidana, yaitu perbuatan yang dilarang dan diancam dengan pidana oleh hukum.</p>
+            <a href="delik.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="pidana">
+            <span class="term-category">HUKUM PIDANA</span>
+             <h3>Mens Rea</h3>
+            <p>Sikap batin atau unsur kesalahan seseorang ketika melakukan tindak pidana.</p>
+            <a href="mens-rea.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="acara">
+            <span class="term-category">HUKUM ACARA</span>
+            <h3>Kasasi</h3>
+            <p>Upaya hukum kepada Mahkamah Agung untuk memeriksa penerapan hukum oleh pengadilan tingkat sebelumnya.</p>
+            <a href="kasasi.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="perdata">
+             <span class="term-category">HUKUM PERDATA</span>
+            <h3>Batal Demi Hukum</h3>
+             <p>Keadaan ketika perjanjian tidak mempunyai kekuatan hukum sejak awal karena tidak memenuhi syarat objektif.</p>
+            <a href="batal-demi-hukum.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="umum">
+            <span class="term-category">HUKUM UMUM</span>
+            <h3>Juncto (jo.)</h3>
+            <p>Istilah hukum untuk menghubungkan satu ketentuan hukum dengan ketentuan hukum lainnya.</p>
+            <a href="juncto.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="acara">
+            <span class="term-category">HUKUM ACARA</span>
+            <h3>Banding</h3>
+            <p>Upaya hukum untuk meminta pengadilan tingkat lebih tinggi memeriksa kembali putusan pengadilan tingkat pertama.</p>
+            <a href="banding.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="acara">
+            <span class="term-category">HUKUM ACARA</span>
+            <h3>Peninjauan Kembali (PK)</h3>
+            <p>Upaya hukum luar biasa untuk memeriksa kembali putusan yang telah berkekuatan hukum tetap.</p>
+            <a href="peninjauan-kembali.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="pidana">
+            <span class="term-category">HUKUM PIDANA</span>
+            <h3>Asas Legalitas</h3>
+            <p>Prinsip bahwa seseorang tidak dapat dipidana tanpa adanya aturan pidana yang telah berlaku sebelumnya.</p>
+            <a href="asas-legalitas.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="umum">
+            <span class="term-category">HUKUM UMUM</span>
+            <h3>Zaakwaarneming</h3>
+            <p>Perbuatan seseorang yang secara sukarela mengurus kepentingan orang lain tanpa perintah atau kuasa sebelumnya.</p>
+            <a href="zaakwaarneming.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="tata-negara">
+            <span class="term-category">HUKUM TATA NEGARA</span>
+            <h3>Hierarki Peraturan Perundang-undangan</h3>
+            <p>Susunan tingkatan peraturan perundang-undangan berdasarkan kedudukan dan kekuatan hukumnya.</p>
+            <a href="hierarki-peraturan.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="pidana">
+            <span class="term-category">HUKUM PIDANA</span>
+            <h3>Dolus dan Culpa</h3>
+            <p>Perbedaan antara kesengajaan dan kealpaan sebagai bentuk kesalahan dalam hukum pidana.</p>
+            <a href="dolus-culpa.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="perdata">
+            <span class="term-category">HUKUM PERDATA</span>
+            <h3>Dapat Dibatalkan</h3>
+            <p>Perjanjian yang tetap berlaku, tetapi dapat dimintakan pembatalan karena tidak terpenuhinya syarat subjektif.</p>
+            <a href="dapat-dibatalkan.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="tata-negara">
+            <span class="term-category">HUKUM TATA NEGARA</span>
+            <h3>DPR</h3>
+            <p>Lembaga perwakilan rakyat yang memiliki fungsi legislasi, anggaran, dan pengawasan.</p>
+            <a href="dpr.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="tata-negara">
+            <span class="term-category">HUKUM TATA NEGARA</span>
+            <h3>DPD</h3>
+            <p>Lembaga negara yang mewakili kepentingan daerah di tingkat nasional.</p>
+            <a href="dpd.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="tata-negara">
+            <span class="term-category">HUKUM TATA NEGARA</span>
+            <h3>MPR</h3>
+            <p>Lembaga negara yang terdiri atas anggota DPR dan DPD serta memiliki kewenangan konstitusional.</p>
+            <a href="mpr.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="tata-negara">
+            <span class="term-category">HUKUM TATA NEGARA</span>
+            <h3>Komisi Yudisial (KY)</h3>
+            <p>Lembaga negara mandiri yang menjaga kehormatan dan perilaku hakim serta mengusulkan calon hakim agung.</p>
+            <a href="ky.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="tata-negara">
+            <span class="term-category">HUKUM TATA NEGARA</span>
+            <h3>Mahkamah Agung (MA)</h3>
+            <p>Lembaga negara tertinggi dalam lingkungan peradilan yang membawahi empat lingkungan badan peradilan.</p>
+            <a href="ma.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="tata-negara">
+            <span class="term-category">HUKUM TATA NEGARA</span>
+            <h3>Mahkamah Konstitusi (MK)</h3>
+            <p>Lembaga negara yang berwenang menguji undang-undang terhadap UUD 1945 dan mengadili perkara konstitusi.</p>
+            <a href="mk.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="tata-negara">
+            <span class="term-category">HUKUM TATA NEGARA</span>
+            <h3>Badan Pemeriksa Keuangan (BPK)</h3>
+            <p>Lembaga negara yang bebas dan mandiri dalam memeriksa pengelolaan serta tanggung jawab keuangan negara.</p>
+            <a href="bpk.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="tata-negara">
+            <span class="term-category">HUKUM TATA NEGARA</span>
+            <h3>Presiden dan Wakil Presiden</h3>
+            <p>Pemegang kekuasaan pemerintahan negara dalam sistem presidensial Indonesia.</p>
+            <a href="presiden-wakil-presiden.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="tata-negara">
+            <span class="term-category">HUKUM TATA NEGARA</span>
+            <h3>Komisi Pemberantasan Korupsi (KPK)</h3>
+            <p>Lembaga negara independen yang bertugas melakukan pemberantasan tindak pidana korupsi.</p>
+            <a href="kpk.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="umum">
+            <span class="term-category">HUKUM UMUM</span>
+            <h3>Ne Bis In Idem</h3>
+            <p>Asas yang melarang perkara yang sama diperiksa atau dituntut kembali setelah diputus secara berkekuatan hukum tetap.</p>
+            <a href="ne-bis-in-idem.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="umum">
+            <span class="term-category">HUKUM UMUM</span>
+            <h3>Lex Superior Derogat Legi Inferiori</h3>
+            <p>Asas bahwa peraturan yang lebih tinggi mengesampingkan peraturan yang lebih rendah apabila bertentangan.</p>
+            <a href="lex-superior.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="umum">
+            <span class="term-category">HUKUM UMUM</span>
+            <h3>Lex Specialis Derogat Legi Generali</h3>
+            <p>Asas bahwa ketentuan khusus mengesampingkan ketentuan umum dalam persoalan yang sama.</p>
+            <a href="lex-specialis.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="umum">
+            <span class="term-category">HUKUM UMUM</span>
+            <h3>Lex Posterior Derogat Legi Priori</h3>
+            <p>Asas bahwa peraturan yang lebih baru mengesampingkan peraturan yang lebih lama apabila bertentangan.</p>
+            <a href="lex-posterior.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="umum">
+            <span class="term-category">HUKUM UMUM</span>
+            <h3>Sumber Hukum Formil dan Materiil</h3>
+            <p>Penggolongan sumber hukum berdasarkan faktor pembentuk isi hukum dan bentuk berlakunya aturan hukum.</p>
+            <a href="sumber-hukum.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="acara">
+            <span class="term-category">HUKUM ACARA</span>
+            <h3>Penggugat</h3>
+            <p>Pihak yang mengajukan gugatan ke pengadilan untuk mempertahankan atau menuntut haknya.</p>
+            <a href="penggugat.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="acara"> 
+            <span class="term-category">HUKUM ACARA</span>
+            <h3>Tergugat</h3>
+            <p>Pihak yang menjadi lawan dalam perkara perdata karena digugat oleh penggugat.</p>
+            <a href="tergugat.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="acara"> 
+            <span class="term-category">HUKUM ACARA</span>
+            <h3>Kuasa Hukum</h3>
+            <p>Pihak yang diberi kewenangan untuk mewakili atau mendampingi seseorang dalam perkara hukum.</p>
+            <a href="kuasa-hukum.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="acara">
+            <span class="term-category">HUKUM ACARA</span>
+            <h3>Alat Bukti Perdata</h3>
+            <p>Lima alat bukti utama yang digunakan untuk membuktikan dalil dalam perkara perdata.</p>
+            <a href="alat-bukti-perdata.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="acara">
+            <span class="term-category">HUKUM ACARA</span>
+            <h3>Jenis-Jenis Putusan Hakim</h3>
+            <p>Mengenal putusan sela, putusan akhir, condemnatoir, constitutief, declaratoir, gugur, dan verstek.</p>
+            <a href="jenis-putusan.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="acara">
+            <span class="term-category">HUKUM ACARA</span>
+            <h3>Replik</h3>
+            <p>Tanggapan penggugat terhadap jawaban yang disampaikan oleh tergugat dalam perkara perdata.</p>
+            <a href="replik.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="acara">
+            <span class="term-category">HUKUM ACARA</span>
+            <h3>Duplik</h3>
+            <p>Tanggapan tergugat terhadap replik yang disampaikan penggugat dalam perkara perdata.</p>
+            <a href="duplik.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="umum">
+            <span class="term-category">HUKUM UMUM</span>
+            <h3>Pemilihan Umum (Pemilu)</h3>
+            <p>Sarana pelaksanaan kedaulatan rakyat untuk memilih wakil rakyat dan pemimpin pemerintahan.</p>
+            <a href="pemilu.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="umum">
+            <span class="term-category">HUKUM UMUM</span>
+            <h3>Hak Asasi Manusia (HAM)</h3>
+            <p>Hak dasar yang melekat pada setiap manusia dan wajib dihormati, dilindungi, serta dipenuhi.</p>
+            <a href="ham.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="umum">
+            <span class="term-category">HUKUM UMUM</span>
+            <h3>Amandemen UUD 1945</h3>
+            <p>Perubahan terhadap ketentuan UUD 1945 untuk menyesuaikan dan memperbaiki sistem ketatanegaraan.</p>
+            <a href="amandemen.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="umum">
+            <span class="term-category">HUKUM UMUM</span>
+            <h3>Keadaan Darurat Negara</h3>
+            <p>Situasi luar biasa yang memungkinkan penerapan kewenangan khusus negara berdasarkan konstitusi dan hukum.</p>
+            <a href="keadaan-darurat.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="umum">
+            <span class="term-category">HUKUM UMUM</span>
+            <h3>Hak dan Kewajiban Warga Negara</h3>
+            <p>Hubungan warga negara dengan negara yang mencakup hak yang dijamin hukum dan kewajiban yang harus dilaksanakan.</p>
+            <a href="hak-kewajiban-warga-negara.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="umum">
+            <span class="term-category">HUKUM UMUM</span>
+            <h3>Aparat Penegak Hukum (APH)</h3>
+            <p>Mengenal peran polisi, jaksa, hakim, advokat, dan lembaga pemasyarakatan dalam sistem penegakan hukum.</p>
+            <a href="aph.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="umum">
+            <span class="term-category">HUKUM UMUM</span>
+            <h3>De Facto</h3>
+            <p>Istilah yang menggambarkan suatu keadaan berdasarkan fakta atau kenyataan yang benar-benar terjadi.</p>
+            <a href="de-facto.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="umum">
+            <span class="term-category">HUKUM UMUM</span>
+            <h3>De Jure</h3>
+            <p>Istilah yang menggambarkan suatu status atau kedudukan berdasarkan hukum atau pengakuan hukum.</p>
+            <a href="de-jure.html" class="term-link">Learn more ↗</a>
+        </article>
+
+        <article class="dictionary-card" data-category="pidana">
+            <span class="term-category">HUKUM PIDANA</span>
+            <h3>Alasan Pembenar</h3>
+            <p>Keadaan yang menghapus sifat melawan hukum dari suatu perbuatan berdasarkan ketentuan hukum pidana.</p>
+            <a href="alasan-pembenar.html" class="term-link">Learn more ↗</a>
+        </article>
+
+    </div>
+
+    <p id="noResults" class="no-results" hidden>
+        No legal terms found. Try another keyword.
+    </p>
+
+</section>
+
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Lexora. All rights reserved.</p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
